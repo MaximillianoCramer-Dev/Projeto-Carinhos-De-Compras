@@ -1,76 +1,148 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 
-body{
+body {
     background-color: #eeeeee;
 }
 
-.footer-background{
+.footer-background {
     background-color: rgb(204, 199, 199);
 }
 
-@media(max-width:991px){
-    #heading{
+#carrinho {
+    padding: 20px;
+}
+
+.d-flex.justify-content-between.align-items-center.pt-lg-12.pt-md-12.pt-2.pb-3.border-bottom.mobile {
+    padding: 20px 0;
+}
+
+#produc, #prc, #quantity, #total {
+    text-align: center;
+}
+
+#produc, #prc, #quantity, #total {
+    flex-basis: 25%; 
+}
+
+#image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+@media(max-width:991px) {
+    #heading {
         padding-left: 50px;
     }
-    #prc{
+
+    #prc {
         margin-left: 70px;
         padding-left: 110px;
     }
-    #quantity{
+
+    #quantity {
         padding-left: 48px;
     }
-    #produc{
+
+    #produc {
         padding-left: 40px;
     }
-    #total{
+
+    #total {
         padding-left: 54px;
     }
 }
-@media(max-width:767px){
-    .mobile{
+
+@media(max-width:767px) {
+    .mobile {
         font-size: 10px;
     }
-    h5{
+
+    h5 {
         font-size: 14px;
     }
-    h6{
+
+    h6 {
         font-size: 9px;
     }
-    #mobile-font{
+
+    #mobile-font {
         font-size: 11px;
     }
-    #prc{
+
+    #prc {
         font-weight: 700;
         margin-left: -45px;
         padding-left: 105px;
     }
-    #quantity{
+
+    #quantity {
         font-weight: 700;
         padding-left: 6px;
     }
-    #produc{
+
+    #produc {
         font-weight: 700;
         padding-left: 0px;
     }
-    #total{
+
+    #total {
         font-weight: 700;
         padding-left: 9px;
     }
-    #image{
+
+    #image {
         width: 60px;
         height: 60px;
     }
-    .col{
+
+    .col {
         width: 100%;
     }
-    #zero-pad{
+
+    #zero-pad {
         padding: 2%;
         margin-left: 10px;
     }
-    #footer-font{
+
+    #footer-font {
         font-size: 12px;
     }
-    #heading{
+
+    #heading {
         padding-top: 15px;
     }
 }
+
+.d-flex.flex-row.align-items-center {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+
+.d-flex.flex-column.pl-md-4.pl-1 {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#quantity, #total, #prc {
+    flex-shrink: 0;
+    width: 100px;
+    text-align: center;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 18px;
+    color: #dc3545; 
+    padding: 10px;
+}
+
+.close:hover {
+}
+
+.close .fa-times {
+    display: inline-block;
+}
+
